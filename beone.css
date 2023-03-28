@@ -1,0 +1,1032 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+:root {
+    --main-color: #c76cb8;
+    --main-color2: #000000; 
+    --font-family: Baskerville Old Face;
+    --text-color: rgba(49, 48, 48, 0.851);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+.about_div .png {
+    zoom: 2.4;
+}
+.about_div .png3{
+    zoom: 1.9;
+}
+
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+          
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 4rem;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* ==================================header style start */
+
+#fixed1 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+#fixed2 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    display: none;
+}
+
+#fixed2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#fixed3 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    display: none;
+
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .link {
+    margin-left: 450px;
+    z-index: 99999;
+}
+
+
+
+.navbar .link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial Rounded MT;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: .5s;
+}
+
+.navbar .link a:hover {
+    color: var(--main-color);
+}
+
+.navbar .icon ion-icon {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#menu-btn,
+#close {
+    display: none;
+}
+
+.header span {
+    width: 50px;
+    height: 50px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.header span ion-icon {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.header span:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.header span ion-icon:hover {
+    color: var(--main-color);
+    background-color: #ffffff;
+}
+
+.header h1 {
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+.header h2 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 200;
+    padding-top: 5px;
+    letter-spacing: 5px;
+}
+
+/* ==================================header style end */
+/* ==================================about style start */
+.about {
+    padding: 75px 7%;
+    background: white;
+}
+
+.about .about_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+}
+.color-a{
+    color: #c76cb8;
+}
+
+.about_box {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid  black; */
+    padding: 25px;
+}
+
+.about_box span {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.about_box span img {
+    width: 30px;
+    height: 30px;
+}
+
+.about_box span:hover {
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.about_box h3 {
+    font-size: 17px;
+    padding: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.about_box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+/* ==================================about style end */
+/* ================================page style start */
+.page {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.page_box {
+    width: 50%;
+    height: 100%;
+    background: url(images/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_box:nth-child(2) {
+    background: url(images/img3.jpg);
+    background-size: cover;
+    background-position: -1150px 0px;
+    background-repeat: no-repeat;
+}
+
+.page_box1 {
+    width: 100%;
+    height: 50%;
+}
+
+.page_box2 {
+    width: 100%;
+    height: 50%;
+    background: rgb(98, 42, 136);
+    padding: 70px 100px;
+}
+
+.page_box2 h3 {
+    color: var(--main-color);
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.page_box2 h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+.page_box2 p {
+    font-size: 15px;
+    color: #ececec;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.page_box2 span {
+    font-size: 15px;
+    color: #eee;
+    letter-spacing: 3px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+.page_box2 hr {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    margin-top: 10px;
+}
+
+.page_box2 ion-icon {
+    font-size: 15px;
+    color: var(--main-color);
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.page_box2 .line {
+    padding: 0;
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    position: relative;
+    margin-top: 70px;
+}
+
+.page_box2 .line p {
+    padding: 0 0 40px 0;
+    color: #eee;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.page_box2 .line::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* ================================page style end */
+/* =============================Service style start */
+.service {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    background: white;
+}
+
+.heading1 {
+    color: var(--main-color);
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.heading2 {
+    font-size: 35px;
+    font-weight: 250;
+    text-align: center;
+    padding: 10px 0;
+    color: var(--text-color);
+}
+
+.service ul {
+    padding: 50px 0;
+}
+
+.service ul li {
+    display: inline-block;
+    padding: 30px;
+    font-size: 17px;
+    color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: 2px;
+    z-index: -1;
+}
+
+.service ul li ion-icon {
+    padding: 10px;
+    font-size: 50px;
+    z-index: -1;
+}
+
+.service ul li:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.service_div {
+    width: 100%;
+    height: 90vh;
+    background: rgb(98, 42, 136);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service_box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.service_box1 img {
+    height: 100%;
+    transition: .5s;
+}
+
+.service_box img:hover {
+    transform: scale(1.1);
+}
+
+.before {
+    width: 88%;
+    height: 88%;
+    border: 10px solid white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.service_box2 h3 {
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-family: Times New Roman;
+}
+
+.service_box2 h2{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.service_box2 p {
+    padding: 20px 70px;
+    font-size: 15px;
+    color: white;
+    line-height: 35px;
+}
+
+.btn {
+    padding: 10px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    background: rgb(98, 42, 136);
+    transition: .5s;
+    border: 2px solid var(--main-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: var(--main-color);
+    color: rgb(98, 42, 136);
+    border: 2px solid white;
+}
+
+/* =============================Service style end */
+/* ============================portfolio styel start */
+.portfolio {
+    width: 100%;
+    height: auto;
+    padding: 4px;
+    background: white;
+}
+
+.portfolio ul li {
+    display: inline-block;
+    padding: 30px;
+    font-size: 15px;
+    color: var(--text-color);
+    letter-spacing: 3px;
+}
+
+.portfolio ul li:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.Portfolio_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+}
+
+.Portfolio_box h1{
+    color: var(--main-color);
+}
+.Portfolio_box {
+    height: 350px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/foodbox.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* middile portfolio start*/
+.portfolio1 {
+    width: 100%;
+    height: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 600px;
+    padding-right: 600px;
+    background: white;
+}
+.Portfolio_box1 {
+    height: 350px;
+    cursor: pointer;
+    display: grid;
+    background-image: url(images/appliances.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Portfolio_box1 h1{
+    color: var(--main-color);
+}
+
+.Portfolio_box1:hover .Portfolio_content_box {
+    opacity: 1;
+}
+
+/* middle portfolio end */
+
+
+.Portfolio_box:nth-child(2) {
+    background-image: url(images/clothesbox.jpg);
+}
+
+.Portfolio_box:nth-child(3) {
+    background-image: url(images/toybox.jpg);
+}
+
+.Portfolio_box:nth-child(4) {
+    background-image: url(images/furniture.jpg);
+}
+
+
+.Portfolio_content_box {
+    width: 100%;
+    height: 100%;
+    background: var(--main-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.Portfolio_box:hover .Portfolio_content_box {
+    opacity: 1;
+}
+
+.Portfolio_content_box h2 {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+    transition: .5s;
+    transform: translateY(-30px);
+    opacity: 0;
+}
+
+.Portfolio_content_box:hover h2 {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.Portfolio_content_box hr {
+    width: 50%;
+    border: 1px solid var(--main-color);
+    margin: 20px 0 0 0;
+    transition: .5s;
+    opacity: 0;
+}
+
+.Portfolio_content_box:hover hr {
+    opacity: 1;
+}
+
+.Portfolio_content_box p {
+    font-size: 30px;
+    padding: 10px 0;
+    color: white;
+    font-weight: 600;
+    transition: .5s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.Portfolio_content_box:hover p {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.Portfolio_content_box ion-icon {
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid white;
+}
+
+.Portfolio_content_box ion-icon:hover {
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+}
+
+.link-outline {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.Portfolio_content_box:hover .link-outline {
+    transform: translateX(0);
+    opacity: 1;
+
+}
+
+.search-outline {
+    transform: translateX(50px);
+    opacity: 0;
+
+}
+
+.Portfolio_content_box:hover .search-outline {
+    transform: translateX(0);
+    opacity: 1;
+
+}
+
+/* ============================portfolio styel end */
+/* ============================idea style start */
+.idea {
+    width: 100%;
+    height: auto;
+    padding: 0px 5%;
+    background: rgb(98, 42, 136);
+}
+
+.idea_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+}
+
+.idea_box{
+    font-size: 20px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps{
+    color: white;
+    font-size: 40px;
+    align-items: center;
+    padding-left: 45%;
+    padding-top: 15px;
+
+}
+.idea_box h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.idea-p{
+    color: var(--main-color);
+}
+.idea_box p {
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 0 50px 0 10px;
+}
+
+.idea_box p span {
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+/* ============================idea style end */
+/* ============================team style start */
+.team {
+    width: 100%;
+    height: auto;
+    padding: 50px 5%;
+    background: white;
+}
+
+.team_div {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.team_box {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/girls.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team_box:nth-child(2) {
+    background-image: url(images/mark.jpg);
+}
+
+.team_box:nth-child(3) {
+    background-image: url(images/girls.jpg)
+}
+
+.team_box:nth-child(4) {
+    background-image: url(images/girls.jpg)
+}
+
+.team_box:hover .Portfolio_content_box {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.team_box1 h2 {
+    color: var(--main-color);
+}
+
+.team_box1 ion-icon {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    margin-top: 30%;
+    transition: 1s;
+    border: none;
+}
+
+.team_box1 .top {
+    transform: translateY(-50px);
+}
+
+.team_box1:hover .top {
+    transform: translateY(0px);
+    border: none;
+}
+
+.team_box1 .down {
+    transform: translateY(50px);
+}
+
+.team_box1:hover .down {
+    transform: translateY(0px);
+    border: none;
+}
+
+/* ============================team style end */
+/* =============================reviwe style start */
+.reviwe {
+    width: 100%;
+    height: auto;
+    background-image: url(images/latop.jpg);
+    padding: 50px;
+}
+
+.reviwe ion-icon {
+    font-size: 50px;
+    padding: 20px;
+    color: #eee;
+}
+
+.content h2 {
+    padding: 30px 0;
+}
+
+.content p {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: Baskerville Old Face;
+    text-align: center;
+    padding: 50px 200px;
+    color: #bfbbbb;
+    line-height: 35px;
+}
+
+.content p span {
+    font-size: 20px;
+}
+
+.px {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to left, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(bnr1.jpeg);
+    background-size: cover;
+    color: #fff;
+    z-index: 100;
+}
+
+/* =============================reviwe style end */
+/* =============================blog style start */
+.blog {
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 100px 5%;
+}
+
+.blog_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.blog_box {
+    height: 500px;
+}
+
+.box_img {
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+}
+
+.box_text {
+    width: 100%;
+    height: 55%;
+}
+
+.box_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog_box:hover .box_img img {
+    transform: scale(1.1);
+}
+
+.box_text h2 {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 20px 0 5px 0;
+}
+
+.box_text span p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 0 0 20px 0;
+}
+
+.box_text p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0px 0 20px 0;
+    line-height: 30px;
+}
+
+.box_text_nav {
+    width: 100%;
+    padding: 10px;
+    background: rgb(98, 42, 136);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box_text_nav button:hover {
+    cursor: pointer;
+    background: var(--main-color);
+    color: white;
+    border: 2px solid white;
+}
+
+.box_text_nav button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 2px solid var(--main-color);
+    color: white;
+    background: rgb(98, 42, 136);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.box_text_nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.box_text_nav .btn {
+    border: none;
+    color: var(--main-color);
+    padding: 10px 10px;
+    background: white;
+}
+
+/* =============================blog style end */
+/* ============================follow style start */
+.follow {
+    width: 100%;
+    height: auto;
+    background: var(--main-color2);
+}
+
+.follow_div {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.follow_div ion-icon {
+    padding: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+.follow_div ion-icon:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.follow_div input {
+    padding: 15px;
+    width: 50%;
+    font-size: 20px;
+}
+
+.follow_div button {
+    background: black;
+    position: relative;
+    top: 17px;
+}
+
+.follow_div button ion-icon {
+    font-size: 20px;
+    padding: 16px 30px;
+    cursor: pointer;
+}
+
+/* ============================follow style end */
+/* =============================footer style start */
+.footer {
+    width: 100%;
+    height: auto;
+    background: #111;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(39, 38, 38);
+}
+
+.footer_logo img {
+    padding: 30px;
+    width: 50%;
+}
+
+.footer_link a {
+    color: #eee;
+    text-decoration: none;
+    font-family: Arial Rounded MT;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: .5s;
+}
+
+.footer_link a:hover {
+    color: var(--main-color);
+}
+
+/* =============================footer style end */
+/* ===============================intro style start */
+.intro {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    font-size: 20px;
+    color: white;
+    font-family: Arial Rounded MT;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+/* ===============================intro style end */
+.color-a{
+    color: #c76cb8;
+}
