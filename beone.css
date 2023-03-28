@@ -791,7 +791,7 @@ section {
 .reviwe {
     width: 100%;
     height: auto;
-    background-image: url(images/latop.jpg);
+    background:rgb(98, 42, 136);
     padding: 50px;
 }
 
@@ -890,7 +890,7 @@ section {
 
 .box_text_nav {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     background: rgb(98, 42, 136);
     display: flex;
     align-items: center;
